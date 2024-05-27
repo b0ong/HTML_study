@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;   /* 리스트에 있는 점 삭제 */
+        }
+        a {
+            text-decoration: none;    /* 링크에 밑줄 제거 */
+            font-size: 14px;
+        }
+        .menu {
+            width: 800px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .menu > li {
+            width: 20%;
+            float: left;        /* 리스트 왼쪽으로 붙히기 */
+            text-align: center;     /* 텍스트 가운데로 옮기기 */
+            line-height: 40px;
+            background: khaki;
+        }
+        .menu a {
+            color: black;
+        }
+        .submenu > li {
+            line-height: 50px;
+            background: #94a9ff;
+        }
+        .submenu {
+            height: 0;
+            overflow: hidden;    /* 해당 메뉴 이외 숨기기 */
+        }
+        .menu > li:hover {      /* 마우스커서를 올렸을 때 반응 */
+            background: #94a9ff;
+            transition-duration: 0.5s;      /* 트렌지션이 끝나는 시간 설정 */
+        }
+        .menu > li:hover .submenu {
+            height: 250px;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li>
+        <a href="#">MENU1</a>
+        <ul class="submenu">
+            <li><a href="#">submenu01</a></li>
+            <li><a href="#">submenu02</a></li>
+            <li><a href="#">submenu03</a></li>
+            <li><a href="#">submenu04</a></li>
+            <li><a href="#">submenu05</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">MENU2</a>
+        <ul class="submenu">
+            <li><a href="#">submenu01</a></li>
+            <li><a href="#">submenu02</a></li>
+            <li><a href="#">submenu03</a></li>
+            <li><a href="#">submenu04</a></li>
+            <li><a href="#">submenu05</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">MENU3</a>
+        <ul class="submenu">
+            <li><a href="#">submenu01</a></li>
+            <li><a href="#">submenu02</a></li>
+            <li><a href="#">submenu03</a></li>
+            <li><a href="#">submenu04</a></li>
+            <li><a href="#">submenu05</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">MENU4</a>
+        <ul class="submenu">
+            <li><a href="#">submenu01</a></li>
+            <li><a href="#">submenu02</a></li>
+            <li><a href="#">submenu03</a></li>
+            <li><a href="#">submenu04</a></li>
+            <li><a href="#">submenu05</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">MENU5</a>
+        <ul class="submenu">
+            <li><a href="#">submenu01</a></li>
+            <li><a href="#">submenu02</a></li>
+            <li><a href="#">submenu03</a></li>
+            <li><a href="#">submenu04</a></li>
+            <li><a href="#">submenu05</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
